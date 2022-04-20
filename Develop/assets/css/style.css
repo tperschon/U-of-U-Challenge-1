@@ -1,56 +1,64 @@
+/* Sets box-sizing, default padding and margins for page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* Sets body background color */
 body {
-    background-color: #d9dcd6;
+    background-color: #fff; /* white */
 }
-
+/* Changes header font, color, adds a background color and sets a font */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: #2a607c; /* faded blue */
+    color: #fff; /* white */
 }
-
-.header h1 {
+/* Sets h1 to block display and font size */
+h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-.header h1 .seo {
-    color: #d9dcd6;
+/* Changes the letters 'seo' in Horiseon to contrasting color */
+.seo {
+    color: #da1a1a;
 }
-
-.header div {
+/* Changes attributes about <div> in .header class, like padding, margin, font size and family. Also causes it to float to right so it does not interfere with page flow */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header div ul {
+/* Removes bullets on unordered list being used for navigation */
+.header nav ul {
     list-style-type: none;
 }
-
-.header div ul li {
+/* Changes list items to inline-block display with a small margin between each */
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* Colors hotlinks and removes and decoration, such as underlining, from them */
 a {
-    color: #ffffff;
+    color: #fff; /* white */
     text-decoration: none;
 }
-
+/* Sizes text font in paragraphs */
 p {
     font-size: 16px;
 }
-
-.hero {
+/* Positions image absolutely so it does not interfere with block flow, sets opacity to 0 so it cannot be seen, sizes it to 1x1 so it doesn't expand page */
+#img-digital-marketing-meeting {
+    position: absolute;
+    opacity: 0;
+    height: 1px;
+    width: 1px;
+}
+/* Sets and sizes a background image for use as a leading image */
+.leadingimage {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -58,23 +66,23 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* Floats affected content to the left with a margin on the right */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* Floats affected content to the right with a margin on the left */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* Formats div with content, 75% width to leave room for benefits sections with block display, small margin on left to pop */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* Formats div with benefits. Floats to right to align with content div, has some padding and margin to pop, clear to push below other floated elements, width 20% so it fits, colors background to contrast. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -83,118 +91,119 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #2589bd; /* light blue */
 }
-
+/* Formats text color and margin for benefit-lead section */
 .benefit-lead {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: #fff; /* white */
 }
-
+/* Formats text color and margin for benefit-brand section */
 .benefit-brand {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: #fff; /* white */
 }
-
+/* Formats text color and margin for benefit-cost section */
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: #fff; /* white */
 }
-
+/* Centers and adds margin for h3 within benefits-lead */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* Centers and adds margin for h3 within benefits-brand */
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* Centers and adds margin for h3 within benefits-cost */
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* Block display, margin and max width for benefits-lead image */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* Block display, margin and max width for benefits-brand image */
 .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* Block display, margin and max width for benefits-cost image */
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.search-engine-optimization {
+/* Adds margin, padding, background color, font, text color and sets a height for div with search engine optimization section */
+#search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: #0072bb; /* light blue */
+    color: #fff; /* white */
 }
-
-.online-reputation-management {
+/* Adds margin, padding, background color, font, text color and sets a height for div with online reputation management section */
+#online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: #0072bb; /* light blue */
+    color: #ffffff; /* white */
 }
-
-.social-media-marketing {
+/* Adds margin, padding, background color, font, text color and sets a height for div with social media marketing section */
+#social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: #0072bb; /* light blue */
+    color: #ffffff; /* white */
 }
-
-.search-engine-optimization img {
+/* Max image height for search engine optimization section image */
+#search-engine-optimization img {
     max-height: 200px;
 }
-
-.online-reputation-management img {
+/* Max image height for online reputation management section image */
+#online-reputation-management img {
     max-height: 200px;
 }
-
-.social-media-marketing img {
+/* Max image height for social media marketing section image */
+#social-media-marketing img {
     max-height: 200px;
 }
-
-.search-engine-optimization h2 {
+/* Sets margin and font size for h2 within search-engine-optimization section */
+#search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-.online-reputation-management h2 {
+/* Sets margin and font size for h2 within online reputation management section */
+#online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-.social-media-marketing h2 {
+/* Sets margin and font size for h2 within social media marketing section */
+#social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* Padding, alignment  and clear for footer so it neatly sits at center bottom of page */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-.footer h2 {
+/* Font size & boldness for footer */
+.footer div {
     font-size: 20px;
+    font-weight: bold;
 }
